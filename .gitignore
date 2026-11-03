@@ -1,0 +1,22 @@
+# Entorno virtual
+venv/
+.venv/
+
+# Caché de Python
+__pycache__/
+*.pyc
+
+# Base de datos local
+db.sqlite3
+
+# Secretos y variables de entorno
+.env
+
+# Editor
+.vscode/
+.idea/
+
+# Archivos personales
+AGENTS.md
+docs/guia.md
+docs/estado.md
