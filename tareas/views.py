@@ -1,4 +1,11 @@
-from django.http import JsonResponse
+from rest_framework import viewsets
+from .models import Task
+from .serializers import TaskSerializer
 
-def ping(request):
-    return JsonResponse({"mensaje": "hola"})
+
+class TaskViewSet(viewsets.ModelViewSet):
+    queryset = Task.objects.all()
+    serializer_class = TaskSerializer
+
+
+

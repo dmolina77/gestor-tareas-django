@@ -1,8 +1,5 @@
-from django.contrib import admin
-from django.urls import path
-from tareas.views import ping
+from django.urls import path, include
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path("api/ping/", ping)
+    path("api/", include("tareas.urls")),
 ]
